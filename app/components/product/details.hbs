@@ -1,0 +1,28 @@
+<div class="product-details">
+    {{!-- Header --}}
+    <section>
+        <h3>Beats Solo Wirless Headphones</h3>
+        <div class="text-warning">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+        </div>
+    </section>
+
+    {{!-- Price --}}
+    <section>
+        <del class="small text-black-50">$199.95</del>
+        <i class="text-danger font-weight-bold">$99.98</i>
+    </section>
+    <div>
+        <h5>
+            color
+        </h5>
+        <div class="product-colors active-{{@color}}">
+            <span class="product-color color-red" {{on "click" (fn @onChangeColor 'red' )}}></span>
+            <span class="product-color color-black" {{on "click" (fn @onChangeColor 'black' )}}></span>
+        </div>
+    </div>
+</div>
